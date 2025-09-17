@@ -1,9 +1,8 @@
-sanduiches = []
+class Sanduiche:
+    def __init__(self, nome, preco, descricao):
+        self.nome = nome
+        self.preco = preco
+        self.descricao = descricao
 
-for i in range(4):
-    sanduiche = input("Nome do novo sanduiche:")
-    sanduiche.append(sanduiche)
-
-
-    for sanduiche in sanduiches:
-        print(f"lanche: {sanduiche}")
+    def __str__(self):
+        return f"{self.nome} - R${self.preco:.2f}\n{self.descricao}\n"
